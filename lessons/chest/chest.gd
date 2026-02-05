@@ -16,7 +16,7 @@ func open() -> void:
 	input_pickable = false
 	animation_player.play("open")
 
-func _input_event(viewport: Viewport, event: InputEvent, shape_index: int):
+func _input_event(viewport: Viewport, event: InputEvent, shape_index: int) -> void:
 	var event_is_mouse_click: bool = (
 		event is InputEventMouseButton and
 		event.button_index == MOUSE_BUTTON_LEFT and
