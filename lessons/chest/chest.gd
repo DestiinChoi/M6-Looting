@@ -19,7 +19,7 @@ func open() -> void:
 	animation_player.play("open")
 	if possible_items.is_empty():
 		return
-	for current_index in range(randi_range(1, 3)):
+	for current_index in range(randi_range(3, 8)):
 		_spawn_random_item()
 
 func _input_event(viewport: Viewport, event: InputEvent, shape_index: int) -> void:
